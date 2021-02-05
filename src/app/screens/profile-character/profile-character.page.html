@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>profile-character</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div *ngIf="characterInfo">
+          <ion-card size="4">
+            <ion-card-content>
+              <img src="{{characterInfo.image}}" alt="">
+              <ion-text color="primary">
+                <h2>{{characterInfo.name}}</h2>
+              </ion-text>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
